@@ -10,7 +10,7 @@ widgets:
 - category
 - tag
 
-excerpt_link: more... #阅读全文 #Continue Reading
+excerpt_link: comment... #阅读全文 #Continue Reading
 
 comment:
   duoshuo: false 
