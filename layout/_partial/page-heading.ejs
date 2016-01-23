@@ -23,8 +23,26 @@
             <% } %>
             <li>
               <span class="heading-span">With: </span>
+
               <% if(config.disqus_shortname && !theme.comment.duoshuo) { %>
-                <a href="#disqus_thread">Comments</a>
+
+<!-- comments in span
+<span class="disqus-comment-count" data-disqus-url="<%= page.permalink %>"> </span> 
+-->
+
+<!-- comments in span inside of link
+<a href="#disqus_thread" data-disqus-identifier="<%=page.permalink%>#disqus_thread">
+  <span class="disqus-comment-count" data-disqus-url="<%=page.permalink%>"> </span> 
+</a>
+-->                
+
+<!-- working link to comments
+<a href="<%=page.permalink%>#disqus_thread"></a>
+-->
+
+<a href="#disqus_thread"></a>
+
+
 
               <% } else if(theme.comment.duoshuo && theme.comment.duoshuo_short_name) { %>
 
