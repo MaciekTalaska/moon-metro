@@ -5,7 +5,7 @@ menu:
 
 widgets:
 - search
-- toc
+  #- toc
 - recent_posts
 - category
 - tag
