@@ -1,40 +1,14 @@
-moon-metro
-==========
-Moon-Metro is  a flat, minimal and responsive theme for Hexo, it is developed based on [Metro-light](https://github.com/halfer53/metro-light)
-[Demo](http://blog.mugbya.cn)
+Maciek's moon-metro (mmm)
+=========================
 
-## 更改如下
+This is my personal theme for Hexo (http://hexo.io). This theme is based on [Metro-light] 
+Moon-Metro is  a flat, minimal and responsive theme for Hexo, it is developed based on [moon-metro]](https://github.com/mugbya/moon-metro)
 
-- 修改字体
-- 在右边的widget 实现文章目录(TOC)
+[Demo](http://maciektalaska.github.io)
 
-
-### TOC实现
-
-1. 首先在widget 下添加toc挂件
-
-        widgets:
-        - search
-        - toc
-        - recent_posts
-        - category
-        - tag
-
-2. 在主题下的 /layout/_widget/新建 toc.ejs 文件, 并添加如下代码
-
-        <% if(!page.excerpt) { %>
-        <% }  else { %>
-                <% if(page.toc != false){%>
-                    <div class="toc">
-                        <%- "<h2> 文章目录 </h2> " %>
-                        <%-  toc(page.content) %>
-                    </div>
-                <% } %>
-        <% } %>
-
-3. 修改主题。
-
- 在/source/css/_partial/sidebar.styl 添加css样式
-
-
-
+Main modifications:
+- font changed (DajaVu Sans/DejaVu Serif)
+- colors changed a bit
+- no excerpts, all articles visible on a page
+- fix for disqus comments
+- toc disabled
